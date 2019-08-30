@@ -33,8 +33,21 @@ print(df)
 """
 df = pd.read_csv('Salary_Data.csv')
 
-#print first column you can add index of which when you want to printout
-print(df.head())
-#print last column you can add index of which when you want to printout
-print(df.tail())
-print(df.info())
+#prints first column you can add index of which when you want to printout
+#print(df.head())
+
+#prints last column you can add index of which when you want to printout
+#print(df.tail())
+
+#prints out information about your data
+#print(df.info())
+
+#prints out number of rows and columns
+#print(df.shape)
+
+#create duplicate
+temp_df = df.append(df)
+print(temp_df.shape)
+#drop duplicate
+temp_df = temp_df.drop_duplicates()
+print(temp_df.shape)
