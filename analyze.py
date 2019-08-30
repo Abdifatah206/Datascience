@@ -46,8 +46,30 @@ df = pd.read_csv('Salary_Data.csv')
 #print(df.shape)
 
 #create duplicate
-temp_df = df.append(df)
-print(temp_df.shape)
+#temp_df = df.append(df)
+#print(temp_df.shape)
+
+
 #drop duplicate
-temp_df = temp_df.drop_duplicates()
-print(temp_df.shape)
+#temp_df = temp_df.drop_duplicates()
+#print(temp_df.shape)
+
+
+#finding empty columns
+#print(df.isnull())
+#find and adding up null columns
+#print(df.isnull().sum())
+
+
+#mean, mode and average
+#print(df.mean())
+#print(df.mode())
+
+#description about summary of your data
+#print(df.describe())
+#summary of particular category
+#print(df['Salary'].describe())
+#print(df['Salary'].value_counts().head(10))
+
+#relation of correlation
+print(df.corr())
