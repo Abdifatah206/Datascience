@@ -9,4 +9,4 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 df = pd.read_csv('https://raw.githubusercontent.com/LearnDataSci/article-resources/master/Essential%20Statistics/middle_tn_schools.csv')
-print(df.describe())
+print(df.isnull())
